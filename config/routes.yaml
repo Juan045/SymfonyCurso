@@ -1,0 +1,23 @@
+getUsers:
+    path: /users
+    controller: App\Controller\UserController::getUsers
+
+createUser:
+    path: /users/create
+    controller: App\Controller\UserController::createUser
+
+deleteUser:
+    path: /users/delete/{id}
+    controller: App\Controller\UserController::deleteUser
+
+updateUser:
+    path: /users/update/{id}
+    controller: App\Controller\UserController::updateUser
+
+report_pdf_user:
+    path: /users/report-pdf
+    controller: App\Controller\UserController::getPDF
+
+report_excel_user:
+    path: /users/report-excel
+    controller: App\Controller\UserController::getExcel

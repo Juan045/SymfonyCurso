@@ -1,0 +1,19 @@
+{% extends ('base.html.twig') %}
+
+{% block title %}
+    <title>Registro de Usuarios</title>
+{% endblock %}
+
+{% block body%}
+    <h1> Registro </h1>
+    {{ form_start(form_users) }}
+        {{ form_row(form_users.name) }}
+        {{ form_row(form_users.lastname) }}
+        {{ form_row(form_users.email) }}
+        {{ form_row(form_users.password) }}
+
+        {{ form_widget(form_users.submit)}}
+        <a href="{{ path('getUsers')}}" class="btn btn-default">Cancelar</a>
+
+    {{ form_end(form_users) }}
+{% endblock %}
